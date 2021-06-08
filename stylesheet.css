@@ -9,7 +9,7 @@ body {
   left: calc((100vw)/2 - 75px);
   overflow: hidden;
   background-image: url("bg.png");
-  background-size:cover;
+  background-size: fit;
   background-color:#151624;
 }
 
