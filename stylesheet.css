@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   background-size: fit;
   background-color:#151624;
+  color:white;
 }
 
 a:link, a:visited {
