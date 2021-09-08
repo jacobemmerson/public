@@ -10,6 +10,9 @@ body {
   overflow: hidden;
   background-size: fit;
   background-color:#151624;
+}
+
+p {
   color:white;
 }
 
