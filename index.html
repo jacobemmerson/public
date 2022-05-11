@@ -1,35 +1,306 @@
+<!--
+    Name: Jacob Tae Hwan Emmerson
+    Description: This is a revised resume created in HTML with an internal stylesheet based off of the PDF version
+
+    Contact: 
+    (563) 726 - 9927
+    beyurr@gmail.com
+-->
+
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Resume - 2022</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , inital-scale="1.0" />
+    <asp:MultiView runat="server"></asp:MultiView>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
 
-	<!-- why tf you lookin in here -->
-	<!-- wip anyways, not much to see as of yet -->
+        body, html {
+            margin: 0;
+            -ms-overflow-style: none; /* hides scroll for edge */
+            scrollbar-width: none; /* ^ firefox */
+        }
 
-    <head>
-        <title>hi :)</title>
-        <link rel="stylesheet" href="stylesheet.css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body {
+            background-color: #16181d;
+            line-height: 72px;
+            font-weight: 300;
+            font-family: 'Cormorant', serif;
+            color: white;
+            margin: auto;
+        }
 
-		<div class="space stars1"></div>
-		<div class="space stars2"></div>
-		<div class="space stars3"></div>
-		<div class="space stars4"></div>
-    </head>	
-	
-    <body>
-        <div class="fadeIn">
-			<div class="container">
-				<p ><em>WELCOME</em></p>
-				<a href="about.html">about me</a><br />
-				<a href="https://www.linkedin.com/in/jacob-emmerson-00775a198/" target="_blank">linkedin</a><br />
-				<a href="https://github.com/jacobemmerson/" target="_blank">github</a><br />
-				<a href="https://discordapp.com/users/218116286520098826/" target="_blank">discord</a><br />
-				<a href="https://www.tiktok.com/@txehwxn" target="_blank">tiktok</a><br />
-				<a href="https://www.instagram.com/txehwxn/" target="_blank">instagram</a><br />
-				<a href="https://www.snapchat.com/add/emmerson.jake" target="_blank">snapchat</a><br />
-				<a href="mailto: emmerson.jacob@gmail.com" target="_blank">email</a><br />
-			</div>
+
+        h1 {
+            font-size: 72px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height:0px;
+        }
+
+        em {
+            line-height:0px;
+            padding:0;
+            display:block;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            line-height: normal;
+            font-size: 20px
+        }
+
+        /* pardon the excess containers; no longer needed but may be of use in the future (?) */
+
+        .container-header {
+            line-height:12px
+        }
+
+        .container-education {
+            line-height:12px;
+
+        }
+
+        .container-experience {
+            line-height:12px;
+        }
+
+        .container-skills {
+            line-height:12px;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .leftContainer {
+            opacity: 0;
+            flex: 2;
+            text-align: center;
+            animation: fadeIn 1s normal;
+            animation-delay: 1.8s;
+            animation-fill-mode: forwards;
+        }
+
+        .leftContainer ul {
+            line-height: 24px;
+            list-style: none;
+            margin: auto
+        }
+
+        .middleContainer {
+            flex: 3;
+        }
+
+        .rightContainer {
+            opacity: 0;
+            flex: 2;
+            text-align: center;
+            animation: fadeIn 1s normal;
+            animation-delay: 1.8s;
+            animation-fill-mode: forwards;
+        }
+
+        section {
+            opacity: 0;
+            animation: fadeIn 1s 1;
+            animation-fill-mode: forwards;
+        }
+
+        section:nth-of-type(1) {
+            animation-delay: 1.7s;
+        }
+
+        section:nth-of-type(2) {
+            animation-delay: 1.8s;
+        }
+
+        section:nth-of-type(3) {
+            animation-delay: 1.9s;
+        }
+
+        section:nth-of-type(4) {
+            animation-delay: 2.0s;
+        }
+
+        #myName {
+            animation: myName 2s normal;
+        }
+
+       
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes myName {
+            0% {
+                transform: translateY(40vh);
+                opacity: 0;
+            }
+
+            40% {
+                transform: translateY(40vh);
+                opacity: 1;
+            }
+            
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="leftContainer">
+            <div>
+                <ul>
+                    <li>
+                        <h3>Contact Info</h3>
+                    </li>
+                    <li>
+                        Pittsburgh, PA
+                    </li>
+                    <li>
+                        (563) 726 - 9927
+                    </li>
+                    <li>
+                        <a href="mailto:beyurr@gmail.com" target="_blank">beyurr@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://dowkzy.live/" target="_blank">https://dowkzy.live/</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jacobemmerson/" target="_blank">https://github.com/jacobemmerson/</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-		
-    </body>
+        <div class="middleContainer">
+            <h1 id="myName">Jacob T. Emmerson</h1>
+            <section class="container-header">
+                <div class="container-socials">
+                </div>
+            </section>
+            <section class="container-education">
+                <h2>
+                    Education
+                </h2>
+                <div class="content">
+                    <h3>Pine-Richland High School</h3>
+                    <em>High-School Diploma</em>
+                    <ul>
+                        <li>
+                            3.8 UW / 4.2 W GPA
+                        </li>
+                        <li>
+                            Distinction of Highest Honor Roll
+                        </li>
+                        <li>
+                            Co-President of French Club; Community Outreach Director for Anatomy Club
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3>University of Pittsburgh</h3>
+                    <em>B.S. Computer Science</em>
+                    <ul>
+                        <li>
+                            3.68 GPA
+                        </li>
+                        <li>
+                            Fall 2021 Dean's List
+                        </li>
+                        <li>
+                            Communications Officer for the Rainbow Alliance
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container-experience">
+                <h2>
+                    Experience
+                </h2>
+                <div class="content">
+                    <h3>
+                        Starbucks
+                    </h3>
+                    <em>Barista</em>
+                    <ul>
+                        <li>
+                            Serve coffee to thousands of customers each day while prioritizing every guest is well served and satisfied.
+                        </li>
+                        <li>
+                            Memorize hundreds of drink recipes to make sure each handcrafted drink is made to perfection
+                        </li>
+                        <li>
+                            Frequently clean and supply the floor while preparing for mid-day rushes
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container-skills">
+                <h2>
+                    Skills & Interests
+                </h2>
+                <div class="content">
+                    <em>
+                        Skills
+                    </em>
+                    <ul>
+                        <li>
+                            Python, HTML & CSS, Java; some C#; Customer service; planning & organization; Powerpoint, Excel, Word; Adobe Photoshop, Premiere Pro, and After Effects
+                        </li>
+                    </ul>
+                    <em>
+                        Interests
+                    </em>
+                    <ul>
+                        <li>
+                            Web design; nutritional science; coffee; traveling; video editing; streaming; drawing
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="leftContainer">
+            <div>
+                <a style="font-weight:bold;" href="https://docs.google.com/document/d/1Wkp1MnSvr-UKKwPquGRfteuWUAX_rfoZBB4mf1_iyA4/edit?usp=sharing" target="_blank">Print Friendly Version</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
